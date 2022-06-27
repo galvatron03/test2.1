@@ -1,81 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>valera</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="css/libs/min.css">
-    <link rel="stylesheet" href="css/style.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+      <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/libs/min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
 
-<body>
-
+  <body>
     <div class="wrapper">
-        <div class="content">
-            <header class="header">
-                <div class="header_top">
-                    <div class="container">
-                        <div class="header_top-inner">
+      <div class="content">
+        <header class="header">
+          <div class="header_top">
+            <div class="container">
+              <div class="header_top-inner">
+                <div class="header_box--left">
+                  <div class="header_logo">
+                    <a href="#"> <span>Valera</span>Games </a>
+                  </div>
+                  <div class="header_menu">
+                    <ul>
+                      <li><a href="#">About us</a></li>
+                      <li><a href="#">Feedbock</a></li>
+                    </ul>
+                  </div>
+                </div>
 
-                            <div class="header_box--left">
-                                <div class="header_logo">
-                                    <a href="#">
-                                        <span>Valera</span>Games
-                                    </a>
-                                </div>
-                                <div class="header_menu">
-                                    <ul>
-                                        <li><a href="#">About us</a></li>
-                                        <li><a href="#">Feedbock</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        
-                            <div class="header_box--right">
-                                <div class="header_text">
-                                    <a class="header_phone menu-item" href="tel:89374766970">+7 (937) 476-69-70</a>
-                                    <a class="header_delivery delivery menu-item" href="#">Deliver throughout Russia</a>
-                                    <a class="close" href="#"></a>
-                                </div>
+                <div class="header_box--right">
+                  <div class="header_text">
+                    <a class="header_phone menu-item" href="tel:89374766970"
+                      >+7 (937) 476-69-70</a
+                    >
+                    <a class="header_delivery delivery menu-item" href="#"
+                      >Deliver throughout Russia</a
+                    >
+                    <a class="close" href="#"></a>
+                  </div>
 
-                                <div class="header_search-form">
-                                    <form>
-                                        <input type="text" placeholder="Search">
-                                    </form>
-                                </div>
+                  <div class="header_search-form">
+                    <form>
+                      <input type="text" placeholder="Search" />
+                    </form>
+                  </div>
 
-                                    <div class="header_btn">
-                                        <a class="header_btn-menu icon-search" href="#" id="search"></a>
-                                        <a class="header_btn-menu icon-user" href="#" id="search"></a>
-                                        <a class="header_btn-menu icon-shopping-cart" href="#" id="search"></a>
-                                        <div class="header_btn-menu">
-                                            <div class="hamburger">
-                                                <div class="hamburger_span one"></div> 
-                                                <div class="hamburger_span two"></div>
-                                                <div class="hamburger_span three"></div>  
-                                            </div>
-                                        </div>    
-                                    </div>
-                            </div>
-                        </div>
-                      
+                  <div class="header_btn">
+                    <a
+                      class="header_btn-menu icon-search"
+                      href="#"
+                      id="search"
+                    ></a>
+                    <a class="header_btn-menu icon-user" href="#"></a>
+                    <a class="header_btn-menu icon-shopping-cart" href="#"></a>
+                    <div class="header_btn-menu">
+                      <div class="hamburger">
+                        <div class="hamburger_span one"></div>
+                        <div class="hamburger_span two"></div>
+                        <div class="hamburger_span three"></div>
+                      </div>
                     </div>
-                </div> 
-            </header>
-        </div>
-        <footer class="footer"></footer>
-    </div>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/libs.min.js"></script>
-    <script src="js/main.js"></script>
-    
-</body>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
 
+        <section class="categories">
+          <div class="container">
+            <div class="categories_inner categories_menu">
+              <div class="categories_inner--left">
+                <ul class="categories_menu-list">
+                  <li>
+                    <a href="#">
+                      Категория 1
+                      <ul class="categories_inner-submenu categories_submenu">
+                        <div class="categories_submenu-items">
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 1</a>
+                          </li>
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 2</a>
+                          </li>
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 3</a>
+                          </li>
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 4</a>
+                          </li>
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 5</a>
+                          </li>
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 6</a>
+                          </li>
+                        </div>
+                      </ul>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      Категория 2
+                      <ul class="categories_inner-submenu categories_submenu">
+                        <div class="categories_submenu-items">
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 1</a>
+                          </li>
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 2</a>
+                          </li>
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 3</a>
+                          </li>
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 4</a>
+                          </li>
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 5</a>
+                          </li>
+                        </div>
+                      </ul>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      Категория 3
+                      <ul class="categories_inner-submenu categories_submenu">
+                        <div class="categories_submenu-items">
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 1</a>
+                          </li>
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 2</a>
+                          </li>
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 3</a>
+                          </li>
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 4</a>
+                          </li>
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 5</a>
+                          </li>
+                        </div>
+                      </ul>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      Категория 4
+                      <ul class="categories_inner-submenu categories_submenu">
+                        <div class="categories_submenu-items">
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 1</a>
+                          </li>
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 2</a>
+                          </li>
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 3</a>
+                          </li>
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 4</a>
+                          </li>
+                        </div>
+                      </ul>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      Категория 5
+                      <ul class="categories_inner-submenu categories_submenu">
+                        <div class="categories_submenu-items">
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 1</a>
+                          </li>
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 2</a>
+                          </li>
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 3</a>
+                          </li>
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 4</a>
+                          </li>
+                        </div>
+                      </ul>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      Категория 6
+                      <ul class="categories_inner-submenu categories_submenu">
+                        <div class="categories_submenu-items">
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 1</a>
+                          </li>
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 2</a>
+                          </li>
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 3</a>
+                          </li>
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 4</a>
+                          </li>
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 5</a>
+                          </li>
+                          <li class="categories_submenu-item">
+                            <a href="#">Игры 6</a>
+                          </li>
+                        </div>
+                      </ul>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="categories_inner--right">
+                <ul class="categories_menu-list">
+                  <li>
+                    <a href="#">
+                      Калекцыя
+                      <ul class="categories_inner-submenu categories_submenu">
+                        <div class="categories_submenu-items">
+                          <li class="categories_submenu-item">
+                            <a href="#">Сборник 1</a>
+                          </li>
+                          <li class="categories_submenu-item">
+                            <a href="#">Сборник 2</a>
+                          </li>
+                          <li class="categories_submenu-item">
+                            <a href="#">Сборник 3</a>
+                          </li>
+                          <li class="categories_submenu-item">
+                            <a href="#">Сборник 4</a>
+                          </li>
+                        </div>
+                      </ul>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      Калекцыя 2
+                      <ul class="categories_inner-submenu categories_submenu">
+                        <div class="categories_submenu-items">
+                          <li class="categories_submenu-item">
+                            <a href="#">Сборник 1</a>
+                          </li>
+                          <li class="categories_submenu-item">
+                            <a href="#">Сборник 2</a>
+                          </li>
+                        </div>
+                      </ul>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="slider">
+          <div class="container">
+            <div class="slider_inner">
+              
+              <div class="slider_item">
+                <div
+                  class="slider_item-img img"
+                  style="background-image: url(images/slider-1.jpg);"
+                ></div>
+                <div class="slider_item-info">
+                  <div class="slider_suptitle">Выгода 100%</div>
+                  <div class="slider_title">
+                    Бонус при первом паполнении 100%
+                  </div>
+                  <a class="slider_btn" href="#">Паказать больше</a>
+                </div>
+                <div class="slider_item-dots">
+                  <div class="slider_item-dots--left">
+                    <div class="slider_item-dots-total">4</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slider_item">
+                <div
+                  class="slider_item-img img"
+                  style="background-image: url(images/slider-2.jpg);"
+                ></div>
+                <div class="slider_item-info">
+                  <div class="slider_suptitle">Низкие цены</div>
+                  <div class="slider_title">Скидка 20%</div>
+                  <a class="slider_btn" href="#">Паказать больше</a>
+                </div>
+                <div class="slider_item-dots">
+                  <div class="slider_item-dots--left">
+                    <div class="slider_item-dots-total">4</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slider_item">
+                <div
+                  class="slider_item-img img"
+                  style="background-image: url(images/slider-3.jpg);"
+                ></div>
+                <div class="slider_item-info">
+                  <div class="slider_suptitle">Папулярные игры</div>
+                  <div class="slider_title">Игры в каторые играют все</div>
+                  <a class="slider_btn" href="#">Паказать больше</a>
+                </div>
+                <div class="slider_item-dots">
+                  <div class="slider_item-dots--left">
+                    <div class="slider_item-dots-total">4</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slider_item">
+                <div
+                  class="slider_item-img img"
+                  style="background-image: url(images/slider-4.jpg)"
+                ></div>
+                <div class="slider_item-info">
+                  <div class="slider_suptitle">Лутшие навинки</div>
+                  <div class="slider_title">Только самые актуальные игры</div>
+                  <a class="slider_btn" href="#">Паказать больше</a>
+                </div>
+                <div class="slider_item-dots">
+                  <div class="slider_item-dots--left">
+                    <div class="slider_item-dots-total">4</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer"></footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/libs.main.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
