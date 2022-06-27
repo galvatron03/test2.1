@@ -27,7 +27,5 @@ $(function (){
         slidesToScroll: 1,
         autoplay: true
     })
-   
-
-    
+ 
 })

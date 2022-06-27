@@ -269,8 +269,6 @@
       .categories_submenu-item:last-child::before {
       border: none;
     }
-
-    
   }
 }
 .categories_inner
@@ -281,9 +279,8 @@
 }
 // end categories
 
-
 // start slider
-.slider{
+.slider {
   &_item {
     max-width: 1920px;
     width: 100%;
@@ -304,9 +301,7 @@
       left: 150px;
     }
 
-   
-
-    &-dots{
+    &-dots {
       position: absolute;
       bottom: 0;
       left: 0;
@@ -333,24 +328,23 @@
       bottom: 30px;
       left: 71px;
       color: $white;
-
     }
   }
- 
-  &_suptitle{
+
+  &_suptitle {
     color: $white;
     font-size: 20px;
     line-height: 28px;
     margin-bottom: 27px;
   }
 
-  &_title{
+  &_title {
     color: $white;
     font-size: 60px;
     line-height: 64px;
     margin-bottom: 37px;
   }
-  
+
   &_btn {
     display: inline-block;
     padding: 11.5px 23px;
@@ -381,13 +375,13 @@
     display: none;
   }
 
-  & .slick-active{
+  & .slick-active {
     display: block;
     position: relative;
   }
 
   & .slick-active::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -3px;
     left: 0;
@@ -404,3 +398,190 @@
   }
 }
 //end slider
+
+// start sales-leaders
+.sales-leaders {
+  padding: 100px 0px;
+
+  &_title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &_subtitel {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &_items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  &_inner {
+    padding: 30px;
+    transition: all 0.3s;
+
+    & .sales-leaders_hidden {
+      opacity: 0;
+      transition: all 0.3s;
+    }
+
+   
+  }
+
+  &_discount {
+    text-align: right;
+    position: relative;
+    z-index: 1;
+
+    & span {
+      @include f600;
+      padding-left: 10px;
+      z-index: 100;
+    }
+
+    &-square {
+        position: absolute;
+        top: -18px;
+        right: 0;
+        width: 54px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+
+        & span:nth-child(1) {
+            width: 100%;
+            height: 100%;
+            border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+            transition: all 0.5s;
+            animation: animate 6s linear infinite;
+            background-color: rgb(116, 135, 137);
+        }
+    }
+  }
+
+  &_description,
+  &_price {
+    text-align: center;
+  }
+
+   &_description {
+     font-size: 20px;
+     line-height: 1.6;
+     max-width: 263px;
+     width: 100%;
+     margin: 0 auto;
+     margin-bottom: 8px;
+   }
+
+   &_price {
+    display: flex;
+    justify-content: center;
+
+    &--new {
+      @include  f600;
+      padding-right: 25px;
+    }
+
+    &--old {
+      text-decoration: line-through;  
+    }
+   }
+
+   &_bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 22px 15px 0px;
+
+    & .bottom-buy {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; 
+      padding: 7px 14px 7px 0px;
+      border: none;
+      border-radius: 60px;
+      background-color: rgb(237, 235, 233, 0.5);
+      box-shadow: none; 
+      cursor: pointer;
+      transition: all 0.3s;
+      text-decoration: none;
+      outline: none;
+    }
+
+    & .bottom-buy:hover {
+      background-color: $peach; 
+    }
+   }
+
+   &_text {
+    font-size: 14px;
+    @include f600;
+    margin-left: 28px;
+    mask-repeat: 10px;
+  }
+
+  &_icon {
+    border-radius: 50%;
+    position: relative;
+    margin-left: 10px;
+  }
+
+  &_icon::before {
+    font-size: 20px;
+    padding: 5px;
+    background-color: $white;
+    border-radius: 50%;
+  }
+
+   &_inner:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+    & .sales-leaders_hidden {
+        opacity: 1;
+    }
+   }
+
+   &_buy {
+    font-size: 13px;
+    margin-left: 30px;
+    text-align: center;
+    color: darkgray;
+    cursor: pointer;
+    transition: color 0.3s, border 0.3s ease;
+    position: relative;
+   }
+
+   &_buy::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $underline;
+   }
+
+   &__buy:hover {
+    color: $text;
+   }
+
+   &_buy:hover::before{
+    background-color: $text;
+   }
+}
+
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+// end sales-leaders
